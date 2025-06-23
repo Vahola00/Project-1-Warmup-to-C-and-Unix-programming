@@ -30,6 +30,7 @@ int main(int argc, char *argv[]) {
         while ((aLine = getline(&buffer, &bufsize, tiedosto)) != -1) {
             printf("%s", buffer);
         }
+        printf("\n");
         if (buffer != NULL) {
             free(buffer);
         }
